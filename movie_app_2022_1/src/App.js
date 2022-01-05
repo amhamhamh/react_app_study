@@ -3,6 +3,26 @@ import React from 'react';
 //클라스 App은 React.Component를 상속함.
 //상속받은 클라스 App은 render()함수 안에 JSX 문법을 적음
 class App extends React.Component{
+
+    constructor(props){
+        super(props);
+        console.log('생성자 안');
+    }
+    
+      //componet가 마운트 됨
+    componentDidMount(){
+        console.log('componentDidMount 함수 안')
+    }
+      //바껴진 state 값을 업데이트 시킴
+    componentDidUpdate(){
+        console.log('componentDidUpdate 함수 안')
+    }    
+    componentWillUnmount(){
+        console.log('componentWillUnmount 함수 안')
+    }
+    
+
+
     //생성자(동적 데이트를 생성할 때 자주 사용함)
     state = {
         count : 0,
