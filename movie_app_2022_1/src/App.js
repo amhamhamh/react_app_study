@@ -2,6 +2,7 @@ import React from 'react';
 
 //클라스 App은 React.Component를 상속함.
 //상속받은 클라스 App은 render()함수 안에 JSX 문법을 적음
+
 class App extends React.Component{
 
     constructor(props){
