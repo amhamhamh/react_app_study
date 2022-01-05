@@ -9,6 +9,7 @@ class App extends React.Component{
         console.log('생성자 안');
     }
     
+    //생명 주기를 알려줌
       //componet가 마운트 됨
     componentDidMount(){
         console.log('componentDidMount 함수 안')
@@ -17,6 +18,7 @@ class App extends React.Component{
     componentDidUpdate(){
         console.log('componentDidUpdate 함수 안')
     }    
+    //사라지는 함수
     componentWillUnmount(){
         console.log('componentWillUnmount 함수 안')
     }
