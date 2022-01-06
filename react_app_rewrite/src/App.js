@@ -62,14 +62,14 @@ class App extends React.Component{
 
   <section className="container">
     {/* 삼항연산자로 처음 isLoading 값이 거짓이었다가, async await 비동기 함수 getMovies로 나중에 들고 옴    */}
+    {/*여기에서 json 값을 찾아서 들어감 */}
     {isLoading ? (
       <div className="loader">
         <span className="loader__text">Loading</span>
       </div>
     ) :(      
       <div className="movies">
-        {movies.map((movie) =>{
-          {/*여기에서 json 값을 찾아서 들어감 */}
+        {movies.map((movie) =>{          
           return <Movie 
           key={movie.id}
           id ={movie.id}
